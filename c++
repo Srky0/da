@@ -320,7 +320,7 @@ const char* vizner(char* poruka)
 	for (i = 0; i < duzinaPoruke; ++i)
 		kriptovanaPoruka[i] = ((poruka[i] + noviKljuc[i]) % 26) + 'A';
 
-	kriptovanaPoruka[duzinaKljuca] = '\0';
+	kriptovanaPoruka[duzinaPoruke] = '\0';
 
 	return (const char *)kriptovanaPoruka;
 }
